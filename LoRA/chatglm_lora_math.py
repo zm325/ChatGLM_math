@@ -13,11 +13,11 @@ max_source_length = 128
 max_target_length = 128
 max_seq_length = max_source_length+max_target_length
 
-data_path = "./dataset_cn.json"
+data_path = " "
 
 # 加入一个前缀提升模型效果
 prefix = "假设你是一个数学老师，请你解决下面的题目："
-model_type = '../THUDM/chatglm-6b'
+model_type = 'THUDM/chatglm-6b'
 
 tokenizer = transformers.AutoTokenizer.from_pretrained(
     model_type, trust_remote_code=True)
